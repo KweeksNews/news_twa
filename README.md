@@ -1,8 +1,14 @@
-# KweeksNews App
+![KweeksNews](https://kweeksnews.com/wp-content/uploads/2020/02/logo-kweeksnews-black.svg)
 
-This project uses the [Trusted Web Activities](https://developers.google.com/web/updates/2017/10/using-twa) technology to wrap [KweeksNews.com](https://kweeksnews.com) in an Android Application.
+![Version](https://img.shields.io/github/v/release/KweeksNews/kweeksnews-twa?label=Version&sort=semver&style=for-the-badge)
+![Build](https://img.shields.io/github/workflow/status/KweeksNews/kweeksnews-twa/Build%20APK?style=for-the-badge)
+![Downloads](https://img.shields.io/github/downloads/KweeksNews/kweeksnews-twa/latest/total?color=green&label=Downloads&style=for-the-badge)
 
-## License
+## Introduction
+
+KweeksNews App uses the [Trusted Web Activities](https://developers.google.com/web/updates/2017/10/using-twa) technology to wrap [KweeksNews.com](https://kweeksnews.com) in an Android Application.
+
+### License
 
 ```
 Copyright 2015 Google, Inc.

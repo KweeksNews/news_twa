@@ -1,0 +1,39 @@
+name: Build APK
+
+# Triggers the workflow on push or pull request events for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# A workflow to build KweeksNews.com APK
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout file
+      uses: actions/checkout@v2
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+    - name: Build with Gradle
+      env:
+        KEY_JKS: ${{ secrets.KEY_JKS }}
+        KEY_PASSWORD: ${{ secrets.ALIAS_PASSWORD }}
+        ALIAS_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+      run: |
+        echo $KEY_JKS | base64 --decode > key.jks
+        ./gradlew build assembleRelease --stacktrace
+    - name: Release to GitHub
+      uses: marvinpinto/action-automatic-releases@v1.0.0
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "alpha"
+        prerelease: true
+        title: "Alpha Build"
+        files: |
+          LICENSE
+          CHANGELOG
+          app/build/outputs/apk/release/app-release.apk
