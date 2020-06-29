@@ -1,4 +1,4 @@
-![KweeksNews](https://kweeksnews.com/wp-content/uploads/2020/02/logo-kweeksnews-black.svg)
+![KweeksNews](https://kweeksnews.com/wp-content/uploads/2020/07/logo-kweeksnews-black.svg)
 
 ![Version](https://img.shields.io/github/v/release/KweeksNews/kweeksnews-twa?label=Version&sort=semver&style=for-the-badge)
 ![Build](https://img.shields.io/github/workflow/status/KweeksNews/kweeksnews-twa/Build%20APK?style=for-the-badge)
