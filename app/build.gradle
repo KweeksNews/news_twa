@@ -35,6 +35,10 @@ def twaManifest = [
     shortcuts: [
         // Insert shortcuts here, for example:
         // [name: 'Open SVG', short_name: 'Open', url: '/open', icon: 'splash']
+        [name: 'Konten', short_name: 'Konten', url: '/konten/', icon: 'konten'],
+        [name: 'Galeri', short_name: 'Galeri', url: '/galeri/', icon: 'galeri'],
+        [name: 'Kontak', short_name: 'Kontak', url: '/konten/', icon: 'kontak'],
+        [name: 'Tentang', short_name: 'Tentang', url: '/tentang/', icon: 'tentang']
     ],
     // The duration of fade out animation in milliseconds to be played when removing splash screen.
     splashScreenFadeOutDuration: 300
@@ -169,10 +173,10 @@ preBuild.dependsOn(generateShorcutsFile)
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:1.3.2'
+    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:1.4.0'
 
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.browser:browser:1.2.0'
-    implementation 'androidx.core:core:1.1.0'
+    implementation 'androidx.core:core:1.3.1'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 }
