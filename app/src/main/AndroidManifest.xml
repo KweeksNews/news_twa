@@ -29,11 +29,17 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/appName"
         android:supportsRtl="true"
-        android:theme="@style/Theme.LauncherActivity">
+        android:theme="@style/Theme.LauncherActivity"
+        android:name=".ApplicationClass">
+
+        <meta-data
+            android:name="com.onesignal.NotificationAccentColor.DEFAULT"
+            android:value="FFF08519" />
 
         <meta-data
             android:name="asset_statements"
             android:resource="@string/assetStatements" />
+
         <meta-data
             android:name="cros_web_alternative"
             android:value="@string/crosLaunchUrl" />
