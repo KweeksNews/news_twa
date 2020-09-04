@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/github/v/release/KweeksNews/kweeksnews-twa?label=Version&sort=semver&style=for-the-badge)
 ![Build](https://img.shields.io/github/workflow/status/KweeksNews/kweeksnews-twa/Build%20APK?style=for-the-badge)
-![Downloads](https://img.shields.io/github/downloads/KweeksNews/kweeksnews-twa/latest/total?color=green&label=Downloads&style=for-the-badge)
+![Downloads](https://img.shields.io/github/downloads/KweeksNews/kweeksnews-twa/total?color=green&label=Downloads&style=for-the-badge)
 
 ## Introduction
 

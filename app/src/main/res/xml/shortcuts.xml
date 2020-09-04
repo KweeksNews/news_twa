@@ -8,7 +8,7 @@
         <categories android:name='android.intent.category.LAUNCHER' />
     </shortcut>
     <shortcut android:shortcutId='shortcut2' android:enabled='true' android:icon='@drawable/kontak' android:shortcutShortLabel='@string/shortcut_short_name_2' android:shortcutLongLabel='@string/shortcut_name_2'>
-        <intent android:action='android.intent.action.MAIN' android:targetPackage='com.kweeksnews.android' android:targetClass='com.google.androidbrowserhelper.trusted.LauncherActivity' android:data='https://kweeksnews.com/konten/' />
+        <intent android:action='android.intent.action.MAIN' android:targetPackage='com.kweeksnews.android' android:targetClass='com.google.androidbrowserhelper.trusted.LauncherActivity' android:data='https://kweeksnews.com/kontak/' />
         <categories android:name='android.intent.category.LAUNCHER' />
     </shortcut>
     <shortcut android:shortcutId='shortcut3' android:enabled='true' android:icon='@drawable/tentang' android:shortcutShortLabel='@string/shortcut_short_name_3' android:shortcutLongLabel='@string/shortcut_name_3'>

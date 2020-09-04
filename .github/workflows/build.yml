@@ -21,8 +21,8 @@ jobs:
     - name: Build with Gradle
       env:
         KEY_JKS: ${{ secrets.KEY_JKS }}
-        KEY_PASSWORD: ${{ secrets.ALIAS_PASSWORD }}
-        ALIAS_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        ALIAS_PASSWORD: ${{ secrets.ALIAS_PASSWORD }}
       run: |
         echo $KEY_JKS | base64 --decode > key.jks
         ./gradlew build assembleRelease --stacktrace
