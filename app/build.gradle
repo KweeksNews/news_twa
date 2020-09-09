@@ -21,7 +21,7 @@ buildscript {
         maven { url 'https://plugins.gradle.org/m2/'}
     }
     dependencies {
-        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.8, 0.99.99]'
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.12.8'
     }
 }
 apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
@@ -35,7 +35,7 @@ apply plugin: 'com.android.application'
 def twaManifest = [
     applicationId: 'com.kweeksnews.android',
     hostName: 'kweeksnews.com', // The domain being opened in the TWA.
-    launchUrl: '/', // The start path for the TWA. Must be relative to the domain.
+    launchUrl: '/?utm_source=twa', // The start path for the TWA. Must be relative to the domain.
     name: 'KweeksNews', // The name shown on the Android Launcher.
     themeColor: '#000000', // The color used for the status bar.
     navigationColor: '#000000', // The color used for the navigation bar.
@@ -59,13 +59,13 @@ def twaManifest = [
 ]
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
     defaultConfig {
         applicationId twaManifest.applicationId
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 1
-        versionName "1.3.1"
+        versionName "1.4.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         manifestPlaceholders = [
             onesignal_app_id: 'f97432b8-bdfd-4ceb-90f3-82ddeec78212',
@@ -193,7 +193,7 @@ preBuild.dependsOn(generateShorcutsFile)
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.0.0'
-    implementation 'com.onesignal:OneSignal:3.15.2'
+    implementation 'com.onesignal:OneSignal:3.15.3'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.browser:browser:1.2.0'
     implementation 'androidx.core:core:1.3.1'
