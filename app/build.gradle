@@ -35,7 +35,7 @@ apply plugin: 'com.android.application'
 def twaManifest = [
     applicationId: 'com.kweeksnews.android',
     hostName: 'kweeksnews.com', // The domain being opened in the TWA.
-    launchUrl: '/?utm_source=twa', // The start path for the TWA. Must be relative to the domain.
+    launchUrl: '/?utm_source=app&utm_medium=twa&utm_campaign=app_lite', // The start path for the TWA. Must be relative to the domain.
     name: 'KweeksNews', // The name shown on the Android Launcher.
     themeColor: '#000000', // The color used for the status bar.
     navigationColor: '#000000', // The color used for the navigation bar.
@@ -65,7 +65,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
-        versionName "1.4.0"
+        versionName "1.4.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         manifestPlaceholders = [
             onesignal_app_id: 'f97432b8-bdfd-4ceb-90f3-82ddeec78212',
