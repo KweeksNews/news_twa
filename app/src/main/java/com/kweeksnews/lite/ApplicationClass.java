@@ -1,4 +1,4 @@
-package com.kweeksnews.android;
+package com.kweeksnews.lite;
 
 
 import android.app.Application;

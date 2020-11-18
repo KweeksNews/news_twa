@@ -33,7 +33,7 @@ repositories {
 apply plugin: 'com.android.application'
 
 def twaManifest = [
-    applicationId: 'com.kweeksnews.android',
+    applicationId: 'com.kweeksnews.lite',
     hostName: 'kweeksnews.com', // The domain being opened in the TWA.
     launchUrl: '/?utm_source=app&utm_medium=twa&utm_campaign=app_lite', // The start path for the TWA. Must be relative to the domain.
     name: 'KweeksNews', // The name shown on the Android Launcher.
