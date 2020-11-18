@@ -1,18 +1,20 @@
-![KweeksNews](https://kweeksnews.com/wp-content/uploads/2020/07/logo-kweeksnews-black.svg)
+# <p align="center"><img width="40%" src="https://kweeksnews.com/wp-content/uploads/2020/07/logo-kweeksnews-black.svg"></p>
 
-![Version](https://img.shields.io/github/v/release/KweeksNews/kweeksnews-twa?label=Version&sort=semver&style=for-the-badge)
-![Build](https://img.shields.io/github/workflow/status/KweeksNews/kweeksnews-twa/Build%20APK?style=for-the-badge)
-![Downloads](https://img.shields.io/github/downloads/KweeksNews/kweeksnews-twa/total?color=green&label=Downloads&style=for-the-badge)
+<p align="center">
+  <img alt="Version" src="https://img.shields.io/github/v/release/KweeksNews/kweeksnews_twa?label=Version&sort=semver&style=for-the-badge">
+  <img alt="Build" src="https://img.shields.io/github/workflow/status/KweeksNews/kweeksnews_twa/Build%20App?style=for-the-badge">
+  <img alt="Downloads" src="https://img.shields.io/github/downloads/KweeksNews/kweeksnews_twa/total?color=green&label=Downloads&style=for-the-badge">
+</p>
 
 ## Introduction
 
-KweeksNews App uses the [Trusted Web Activities](https://developers.google.com/web/updates/2017/10/using-twa) technology to wrap [KweeksNews.com](https://kweeksnews.com) in an Android Application.
+KweeksNews Lite app uses the [Trusted Web Activities](https://developers.google.com/web/updates/2017/10/using-twa) technology to wrap [KweeksNews](https://kweeksnews.com) in an Android application.
 
 ### License
 
 ```
 Copyright 2015 Google, Inc.
-Copyright 2020 KweeksNews.com
+Copyright 2020 KweeksNews Network
 
 Licensed to the Apache Software Foundation (ASF) under one or more contributor
 license agreements. See the NOTICE file distributed with this work for
