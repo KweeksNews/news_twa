@@ -15,5 +15,7 @@
 -->
 
 <paths>
-    <files-path path="twa_splash/" name="twa_splash" />
+    <files-path
+        name="twa_splash"
+        path="twa_splash/" />
 </paths>

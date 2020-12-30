@@ -24,6 +24,7 @@
 [v1.4.1] - 02/10/2020
 - Update launch url
 
-[v2.0.0] - 18/11/2020
+[v2.0.0] - 30/12/2020
 - Change application ID
 - Update dependencies
+- Migrate source to kotlin

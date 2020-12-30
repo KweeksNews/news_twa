@@ -22,15 +22,16 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kweeksnews.lite">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".ApplicationClass"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/appName"
         android:supportsRtl="true"
-        android:theme="@style/Theme.LauncherActivity"
-        android:name=".ApplicationClass">
+        android:theme="@style/Theme.LauncherActivity">
 
         <meta-data
             android:name="com.onesignal.NotificationAccentColor.DEFAULT"
@@ -44,9 +45,11 @@
             android:name="cros_web_alternative"
             android:value="@string/crosLaunchUrl" />
 
-        <activity android:name="com.google.androidbrowserhelper.trusted.LauncherActivity"
+        <activity
+            android:name="com.google.androidbrowserhelper.trusted.LauncherActivity"
             android:label="@string/appName">
-            <meta-data android:name="android.support.customtabs.trusted.DEFAULT_URL"
+            <meta-data
+                android:name="android.support.customtabs.trusted.DEFAULT_URL"
                 android:value="@string/launchUrl" />
 
             <meta-data
@@ -57,22 +60,29 @@
                 android:name="android.support.customtabs.trusted.NAVIGATION_BAR_COLOR"
                 android:resource="@color/navigationColor" />
 
-            <meta-data android:name="android.support.customtabs.trusted.SPLASH_IMAGE_DRAWABLE"
-                android:resource="@drawable/splash"/>
+            <meta-data
+                android:name="android.support.customtabs.trusted.SPLASH_IMAGE_DRAWABLE"
+                android:resource="@drawable/splash" />
 
-            <meta-data android:name="android.support.customtabs.trusted.SPLASH_SCREEN_BACKGROUND_COLOR"
-                android:resource="@color/backgroundColor"/>
+            <meta-data
+                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_BACKGROUND_COLOR"
+                android:resource="@color/backgroundColor" />
 
-            <meta-data android:name="android.support.customtabs.trusted.SPLASH_SCREEN_FADE_OUT_DURATION"
-                android:value="@integer/splashScreenFadeOutDuration"/>
+            <meta-data
+                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_FADE_OUT_DURATION"
+                android:value="@integer/splashScreenFadeOutDuration" />
 
-            <meta-data android:name="android.support.customtabs.trusted.FILE_PROVIDER_AUTHORITY"
-                android:value="@string/providerAuthority"/>
+            <meta-data
+                android:name="android.support.customtabs.trusted.FILE_PROVIDER_AUTHORITY"
+                android:value="@string/providerAuthority" />
 
-            <meta-data android:name="android.support.customtabs.trusted.FALLBACK_STRATEGY"
+            <meta-data
+                android:name="android.support.customtabs.trusted.FALLBACK_STRATEGY"
                 android:value="webview" />
 
-            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts" />
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -80,23 +90,27 @@
             </intent-filter>
 
             <intent-filter android:autoVerify="true">
-                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:scheme="https"
-                    android:host="@string/hostName"/>
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/hostName"
+                    android:scheme="https" />
             </intent-filter>
 
         </activity>
 
-        <activity android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
+        <activity
+            android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
             android:configChanges="orientation|screenSize" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="@string/providerAuthority"
-            android:grantUriPermissions="true"
-            android:exported="false">
+            android:exported="false"
+            android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/filepaths" />
@@ -108,8 +122,8 @@
             android:exported="@bool/enableNotification">
 
             <intent-filter>
-                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </service>
     </application>
