@@ -1,4 +1,4 @@
-# <p align="center"><img width="40%" src="https://kweeksnews.com/wp-content/uploads/2020/07/logo-kweeksnews-black.svg"></p>
+# <p align="center"><img width="40%" src="https://kweeksnews.com/wp-content/uploads/2020/07/kweeksnews-black.svg"></p>
 
 <p align="center">
   <img alt="Version" src="https://img.shields.io/github/v/release/KweeksNews/kweeksnews_twa?label=Version&sort=semver&style=for-the-badge">
