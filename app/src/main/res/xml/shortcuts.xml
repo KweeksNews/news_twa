@@ -27,26 +27,13 @@
     </shortcut>
     <shortcut
         android:enabled='true'
-        android:icon='@drawable/kontak'
+        android:icon='@drawable/kirim_konten'
         android:shortcutId='shortcut2'
         android:shortcutLongLabel='@string/shortcut_name_2'
         android:shortcutShortLabel='@string/shortcut_short_name_2'>
         <intent
             android:action='android.intent.action.MAIN'
-            android:data='https://kweeksnews.com/kontak/'
-            android:targetClass='com.google.androidbrowserhelper.trusted.LauncherActivity'
-            android:targetPackage='com.kweeksnews.lite' />
-        <categories android:name='android.intent.category.LAUNCHER' />
-    </shortcut>
-    <shortcut
-        android:enabled='true'
-        android:icon='@drawable/tentang'
-        android:shortcutId='shortcut3'
-        android:shortcutLongLabel='@string/shortcut_name_3'
-        android:shortcutShortLabel='@string/shortcut_short_name_3'>
-        <intent
-            android:action='android.intent.action.MAIN'
-            android:data='https://kweeksnews.com/tentang/'
+            android:data='https://kweeksnews.com/kirim-konten/'
             android:targetClass='com.google.androidbrowserhelper.trusted.LauncherActivity'
             android:targetPackage='com.kweeksnews.lite' />
         <categories android:name='android.intent.category.LAUNCHER' />

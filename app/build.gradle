@@ -61,8 +61,7 @@ def twaManifest = [
                 // [name: 'Open SVG', short_name: 'Open', url: '/open', icon: 'splash']
                 [name: 'Konten', short_name: 'Konten', url: '/konten/', icon: 'konten'],
                 [name: 'Galeri', short_name: 'Galeri', url: '/galeri/', icon: 'galeri'],
-                [name: 'Kontak', short_name: 'Kontak', url: '/kontak/', icon: 'kontak'],
-                [name: 'Tentang', short_name: 'Tentang', url: '/tentang/', icon: 'tentang']
+                [name: 'Kirim Konten', short_name: 'Kirim Konten', url: '/kirim-konten/', icon: 'kirim_konten'],
         ],
         // The duration of fade out animation in milliseconds to be played when removing splash screen.
         splashScreenFadeOutDuration: 300
