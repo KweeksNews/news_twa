@@ -44,7 +44,7 @@ repositories {
 
 def twaManifest = [
         applicationId              : 'com.kweeksnews.lite',
-        hostName                   : 'kweeksnews.com', // The domain being opened in the TWA.
+        hostName                   : 'www.kweeksnews.com', // The domain being opened in the TWA.
         launchUrl                  : '/?utm_source=app&utm_medium=twa&utm_campaign=app_lite', // The start path for the TWA. Must be relative to the domain.
         name                       : 'KweeksNews', // The name shown on the Android Launcher.
         themeColor                 : '#000000', // The color used for the status bar.
@@ -59,8 +59,8 @@ def twaManifest = [
         shortcuts                  : [
                 // Insert shortcuts here, for example:
                 // [name: 'Open SVG', short_name: 'Open', url: '/open', icon: 'splash']
-                [name: 'Konten', short_name: 'Konten', url: '/konten/', icon: 'konten'],
-                [name: 'Galeri', short_name: 'Galeri', url: '/galeri/', icon: 'galeri'],
+                [name: 'Konten', short_name: 'Konten', url: '/category/konten/', icon: 'konten'],
+                [name: 'Galeri', short_name: 'Galeri', url: '/category/galeri/', icon: 'galeri'],
                 [name: 'Kirim Konten', short_name: 'Kirim Konten', url: '/kirim-konten/', icon: 'kirim_konten'],
         ],
         // The duration of fade out animation in milliseconds to be played when removing splash screen.
@@ -74,7 +74,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 2
-        versionName "2.0.0"
+        versionName "2.0.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         // The name for the application on the Android Launcher
@@ -141,7 +141,7 @@ android {
         release {
             storeFile file("../key.jks")
             storePassword = "$System.env.KEY_PASSWORD"
-            keyAlias = "twa-app"
+            keyAlias = "key"
             keyPassword = "$System.env.ALIAS_PASSWORD"
         }
     }

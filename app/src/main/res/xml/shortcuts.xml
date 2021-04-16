@@ -7,7 +7,7 @@
         android:shortcutShortLabel='@string/shortcut_short_name_0'>
         <intent
             android:action='android.intent.action.MAIN'
-            android:data='https://kweeksnews.com/konten/'
+            android:data='https://www.kweeksnews.com/category/konten/'
             android:targetClass='com.google.androidbrowserhelper.trusted.LauncherActivity'
             android:targetPackage='com.kweeksnews.lite' />
         <categories android:name='android.intent.category.LAUNCHER' />
@@ -20,7 +20,7 @@
         android:shortcutShortLabel='@string/shortcut_short_name_1'>
         <intent
             android:action='android.intent.action.MAIN'
-            android:data='https://kweeksnews.com/galeri/'
+            android:data='https://www.kweeksnews.com/category/galeri/'
             android:targetClass='com.google.androidbrowserhelper.trusted.LauncherActivity'
             android:targetPackage='com.kweeksnews.lite' />
         <categories android:name='android.intent.category.LAUNCHER' />
@@ -33,7 +33,7 @@
         android:shortcutShortLabel='@string/shortcut_short_name_2'>
         <intent
             android:action='android.intent.action.MAIN'
-            android:data='https://kweeksnews.com/kirim-konten/'
+            android:data='https://www.kweeksnews.com/kirim-konten/'
             android:targetClass='com.google.androidbrowserhelper.trusted.LauncherActivity'
             android:targetPackage='com.kweeksnews.lite' />
         <categories android:name='android.intent.category.LAUNCHER' />
