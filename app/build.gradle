@@ -67,6 +67,12 @@ def twaManifest = [
         splashScreenFadeOutDuration: 300
 ]
 
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('keystore.properties')
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
 android {
     compileSdkVersion 30
     defaultConfig {
@@ -137,20 +143,23 @@ android {
         // to be played when removing splash screen. The default is 0 (no animation).
         resValue "integer", "splashScreenFadeOutDuration", twaManifest.splashScreenFadeOutDuration.toString()
     }
+
     signingConfigs {
         release {
-            storeFile file("../key.jks")
-            storePassword = "$System.env.KEY_PASSWORD"
-            keyAlias = "key"
-            keyPassword = "$System.env.ALIAS_PASSWORD"
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
         }
     }
+
     buildTypes {
         release {
             signingConfig signingConfigs.release
             minifyEnabled true
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
