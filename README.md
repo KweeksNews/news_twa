@@ -1,4 +1,4 @@
-# <p align="center"><img width="40%" src="https://kweeksnews.com/wp-content/uploads/2020/07/kweeksnews-black.svg"></p>
+# <p align="center"><img width="40%" src="https://www.kweeksnews.com/wp-content/uploads/2020/07/kweeksnews-black.svg"></p>
 
 <p align="center">
   <img alt="Version" src="https://img.shields.io/github/v/release/KweeksNews/kweeksnews_twa?label=Version&sort=semver&style=for-the-badge">
@@ -8,7 +8,7 @@
 
 ## Introduction
 
-KweeksNews Lite app uses the [Trusted Web Activities](https://developers.google.com/web/updates/2017/10/using-twa) technology to wrap [KweeksNews](https://kweeksnews.com) in an Android application.
+KweeksNews Lite app uses the [Trusted Web Activities](https://developers.google.com/web/updates/2017/10/using-twa) technology to wrap [KweeksNews](https://www.kweeksnews.com) in an Android application.
 
 ### License
 

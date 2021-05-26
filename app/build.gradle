@@ -30,11 +30,11 @@ plugins {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.2.0'
-    implementation 'com.onesignal:OneSignal:4.2.0'
-    implementation 'androidx.browser:browser:1.3.0'
-    implementation 'androidx.core:core-ktx:1.3.2'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.3.0'
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+    implementation 'androidx.browser:browser:1.4.0'
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.31'
 }
 
@@ -59,8 +59,6 @@ def twaManifest = [
         shortcuts                  : [
                 // Insert shortcuts here, for example:
                 // [name: 'Open SVG', short_name: 'Open', url: '/open', icon: 'splash']
-                [name: 'Konten', short_name: 'Konten', url: '/category/konten/', icon: 'konten'],
-                [name: 'Galeri', short_name: 'Galeri', url: '/category/galeri/', icon: 'galeri'],
                 [name: 'Kirim Konten', short_name: 'Kirim Konten', url: '/kirim-konten/', icon: 'kirim_konten'],
         ],
         // The duration of fade out animation in milliseconds to be played when removing splash screen.
@@ -74,13 +72,13 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     defaultConfig {
         applicationId twaManifest.applicationId
         minSdkVersion 21
-        targetSdkVersion 30
-        versionCode 2
-        versionName "2.0.1"
+        targetSdkVersion 31
+        versionCode 3
+        versionName "2.0.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         // The name for the application on the Android Launcher

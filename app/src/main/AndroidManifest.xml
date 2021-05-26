@@ -47,6 +47,7 @@
 
         <activity
             android:name="com.google.androidbrowserhelper.trusted.LauncherActivity"
+            android:exported="true"
             android:label="@string/appName">
             <meta-data
                 android:name="android.support.customtabs.trusted.DEFAULT_URL"
@@ -104,6 +105,7 @@
 
         <activity
             android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
+            android:exported="true"
             android:configChanges="orientation|screenSize" />
 
         <provider
