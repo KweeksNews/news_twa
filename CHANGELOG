@@ -28,3 +28,13 @@
 - Change application ID
 - Update dependencies
 - Migrate source to kotlin
+
+[v2.0.1] - 18/04/2021
+- Update hostname
+- Update shortcuts
+- Update dependencies
+
+[v2.0.2] - 20/01/2022
+- Update SDK version to v31
+- Update shortcuts
+- Update dependencies
