@@ -1,13 +1,14 @@
-name: Release (Beta)
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow
+name: Release
 
 on:
   push:
     paths:
       - "app/**"
-    branches: [develop]
+    branches: [master]
 
 jobs:
-  deploy:
+  release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout file
