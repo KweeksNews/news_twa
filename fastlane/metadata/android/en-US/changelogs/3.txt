@@ -1,0 +1,3 @@
+- Added support for Android 12
+- Updated shortcuts
+- Updated dependencies

@@ -1,0 +1,3 @@
+- Penambahan dukungan untuk Android 12
+- Pembaruan pintasan
+- Pembaruan dependensi

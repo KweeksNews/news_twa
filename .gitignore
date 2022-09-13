@@ -2,6 +2,7 @@
 .gradle
 /keystore.properties
 /local.properties
+/play_config.json
 /.idea/caches/build_file_checksums.ser
 /.idea/libraries
 /.idea/modules.xml
