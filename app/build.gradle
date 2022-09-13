@@ -72,11 +72,11 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 33
     defaultConfig {
         applicationId twaManifest.applicationId
         minSdkVersion 21
-        targetSdkVersion 31
+        targetSdkVersion 33
         versionCode 3
         versionName "2.0.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
