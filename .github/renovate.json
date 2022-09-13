@@ -1,0 +1,68 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:base",
+        "schedule:weekends",
+        ":semanticCommits"
+    ],
+    "baseBranches": [
+        "develop"
+    ],
+    "reviewers": [
+        "team:webmaster"
+    ],
+    "packageRules": [
+        {
+            "groupName": "non-major dependencies",
+            "groupSlug": "non-major",
+            "matchManagers": [
+                "gradle",
+                "gradle-wrapper"
+            ],
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
+            ],
+            "automerge": true,
+            "automergeStrategy": "fast-forward",
+            "labels": [
+                "dependencies"
+            ]
+        },
+        {
+            "groupName": "major dependencies",
+            "groupSlug": "major",
+            "matchManagers": [
+                "gradle",
+                "gradle-wrapper"
+            ],
+            "matchUpdateTypes": [
+                "major"
+            ],
+            "labels": [
+                "dependencies",
+                "breaking"
+            ]
+        },
+        {
+            "matchManagers": [
+                "bundler",
+                "ruby-version"
+            ],
+            "automerge": true,
+            "automergeStrategy": "fast-forward",
+            "labels": [
+                "dependencies"
+            ]
+        },
+        {
+            "matchManagers": [
+                "github-actions"
+            ],
+            "labels": [
+                "dependencies",
+                "github actions"
+            ]
+        }
+    ]
+}
