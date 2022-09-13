@@ -22,7 +22,7 @@ platform :android do
   end
 
   desc "Deploy to the Google Play"
-  lane :Deploy do
+  lane :deploy do
     gradle(
       task: 'bundle',
       build_type: 'Release'
