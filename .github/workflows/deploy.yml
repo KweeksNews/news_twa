@@ -35,8 +35,7 @@ jobs:
           KEYSTORE_STORE_PASSWORD: ${{ secrets.KEYSTORE_STORE_PASSWORD }}
 
       - name: Create Google Play config file
-        run: |
-          echo "$PLAY_CONFIG_JSON" | base64 -d > play_config.json
+        run: echo $PLAY_CONFIG_JSON | base64 -d > play_config.json
         env:
           PLAY_CONFIG_JSON: ${{ secrets.PLAY_CONFIG_JSON }}
 

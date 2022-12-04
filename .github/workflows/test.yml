@@ -3,16 +3,16 @@ name: Test
 
 on:
   push:
-    branches: 
+    branches:
       - develop
   pull_request:
-    branches: 
+    branches:
+      - main
       - develop
 
-
 jobs:
-  test-build:
-    name: Test Build
+  build-test:
+    name: Build Test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
