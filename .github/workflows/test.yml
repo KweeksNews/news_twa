@@ -37,7 +37,7 @@ jobs:
           KEYSTORE_STORE_PASSWORD: ${{ secrets.KEYSTORE_STORE_PASSWORD }}
 
       - name: Build
-        uses: maierj/fastlane-action@v3.0.0
+        uses: maierj/fastlane-action@v3.1.0
         with:
           lane: test
 
