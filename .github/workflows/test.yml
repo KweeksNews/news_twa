@@ -16,10 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3.7.0
 
       - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@v1.321.0
         with:
           bundler-cache: true
 
@@ -42,7 +42,7 @@ jobs:
           lane: test
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3.2.2
         with:
           name: app-release.aab
           path: app/build/outputs/bundle/release/app-release.aab
